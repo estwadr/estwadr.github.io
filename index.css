@@ -1,0 +1,300 @@
+:root {
+  --biru: #09558B;
+  --kuning: #FFC71F;
+  --bg: #F5F7FE;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass",sans-serif;
+}
+body {
+  min-height: max-content;
+  background-color: var(--bg);
+}
+
+.navbar {
+  background-color: var(--biru);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  border-bottom: 5px var(--kuning) solid;
+  z-index: 100;
+}
+.nav-behind {
+  height: 90px;
+}
+.logo {
+  /* background-color: burlywood; */
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 3rem;
+}
+.nama-rs {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-left: 1rem;
+}
+.nama-rs p {
+  font-family: "Pacifico", sans-serif;
+  font-size: 1.5rem;
+  color: var(--bg);
+  border-bottom: 1px var(--kuning) solid;
+}
+.nama-rs span {
+  font-family: "Poetsen One";
+  font-size: 0.9rem;
+  color: var(--bg);
+  justify-content: end;
+}
+
+.tentang a {
+  background-color: var(--kuning);
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 5px;
+  color: var(--biru);
+}
+
+.konten {
+  position: static;
+  width: max-content;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.konten-kiri img {
+  width: 25rem;
+}
+.konten-kanan {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 10px;
+  margin-left: 10px;
+}
+.konten-kanan img {
+  width: 27.3rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  margin: 1rem 0;
+}
+.link-atas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.kamar a{
+  padding: 1rem 3rem;
+  background-color: var(--biru);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  transition: 0.2s;
+}
+.pasien a{
+  padding: 1rem 3rem;
+  background-color: var(--biru);
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-right: 1px var(--bg) solid;
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  transition: 0.2s;
+}
+.pasien a:hover, .kamar a:hover, .obat a:hover, .dokter a:hover, .perawat a:hover, .apoteker a:hover{  
+  background-color: var(--kuning);
+  transform: scale(0.9);
+  /* z-index: 10; */
+}
+.obat a{
+  padding: 1rem 3rem;
+  background-color: var(--biru);
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+  border-left: 1px var(--bg) solid;
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  transition: 0.2s;
+  
+}
+.link-bawah {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dokter a{
+  padding: 1rem 2.4rem;
+  background-color: var(--biru);
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-right: 1px var(--bg) solid;
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  transition: 0.2s;
+}
+
+.perawat a{
+  padding: 1rem 2.4rem;
+  background-color: var(--biru);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  transition: 0.2s;
+}
+.apoteker a{
+  padding: 1rem 2.4rem;
+  background-color: var(--biru);
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+  border-left: 1px var(--bg) solid;
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  transition: 0.2s;
+}
+.pasien a, .kamar a, .obat a, .dokter a, .perawat a, .apoteker a{
+  letter-spacing: 1px;
+  flex-direction: column;
+  align-items: center;
+  height: 2.5rem;
+  justify-content: center;
+}
+.kelompok{
+  background-color: var(--biru);
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+.kelompok img{
+  width: 8rem;
+}
+
+.abyan, .erich, .faishal, .rahman, .ganza{
+  display: flex;
+  width: 50rem;
+  align-items: end;
+}
+
+.erich, .rahman{
+  justify-content: end;
+}
+.anggota-kel{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--kuning);
+  border-radius: 5px;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+.anggota-kel span{
+  /* margin: 0 1rem; */
+  color: var(--biru);
+}
+.kel-kiri{
+  align-items: end;
+}
+.nama-kel{
+  /* color: var(--bg) !important; */
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  border-bottom: 1px var(--biru) solid;
+  font-weight: 600;
+  /* margin: 0 1rem; */
+}
+.footer{
+  /* background-color: coral; */
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 3rem 0; */
+  height: 20rem;
+}
+.footer-logo, .footer-hubungi, .footer-informasi, .footer-kontak{
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo-atas{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.logo-rs{
+  width: 3rem;
+}
+.footer-logo{
+  background-color: var(--biru);
+  padding: 3rem 2rem ;
+}
+.footer-logo, .footer-hubungi, .footer-informasi, .footer-kontak{
+  align-items: start;
+  width: 14rem;
+  justify-content: center;
+}
+.footer-alamat{
+  margin-top: 0.9rem;
+}
+.footer-alamat span{
+  color: var(--bg);
+  font-size: larger;
+}
+.footer-hubungi{
+  width: 20rem;
+}
+.footer-hubungi a, .footer-informasi a{
+  text-decoration: none;
+  color: var(--biru);
+  font-family: "Poppins", sans-serif;
+  margin: 0.4rem 0;
+}
+.footer-hubungi, h2 .footer-informasi h2, .footer-kontak h2{
+  margin-bottom: 0.3rem;
+}
+.footer-kontak a{
+  width: 100%;
+  padding: 0.2rem;
+  padding-left: 0.7rem;
+  margin: 0.4rem 0;
+  text-decoration: none;
+  color: var(--bg);
+  font-family: "Poppins", sans-serif;
+  border-radius: 3rem;
+  background-color: var(--biru);
+}
+.copyright{
+  background-color: var(--kuning);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
